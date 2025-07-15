@@ -22,7 +22,7 @@ steps:
             for dir in environments/*/
             do
               cd ${dir}   
-              env=${dir} #Removes trailing slash from path (e.g., environments/dev/ → environments/dev).
+              env=${dir%*/} #Removes trailing slash from path (e.g., environments/dev/ → environments/dev).
               env=${env#*/} #Removes leading environments/, leaving you with just the environment name (e.g., dev).
               echo ""
               echo "*************** TERRAFORM INIT ******************"
