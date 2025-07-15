@@ -1,0 +1,5 @@
+gcp_project      = "devsecops-3-tier-463414"
+gcp_region1      = "us-central1"
+environment      = "prod"
+machine_type     = "e2-micro"
+business_divsion = "hr"
